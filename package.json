@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write ."   
+    "format": "prettier --write .",
+    "stylelint": "stylelint \"src/**/*.{scss,css}\"",
+    "stylelint:fix": "stylelint \"src/**/*.{scss,css}\" --fix"
   },
   "dependencies": {
     "axios": "^1.10.0",
@@ -30,8 +32,12 @@
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-unused-imports": "^4.1.4",
     "postcss": "^8.5.6",
+    "postcss-scss": "^4.0.9",
     "prettier": "^3.6.2",
     "sass": "^1.89.2",
+    "stylelint": "^16.21.1",
+    "stylelint-config-standard-scss": "^15.0.1",
+    "stylelint-scss": "^6.12.1",
     "typescript": "^5.0.0"
   }
 }
