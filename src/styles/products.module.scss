@@ -1,0 +1,21 @@
+.products {
+  padding: 2rem 1rem;
+
+  .content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}

@@ -1,0 +1,105 @@
+.header {
+  background: var(--thirdBG);
+  color: var(--text-white);
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+  img {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.left {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  @media (width <= 650px) {
+    gap: 10px;
+  }
+}
+
+.middle {
+  background: var(--secondBG);
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-bottom: 2px solid red;
+
+  @media (width <= 768px) {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  @media (width <= 450px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.middleContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+  }
+
+  @media (width <= 450px) {
+    gap: 10px;
+  }
+}
+
+.logo {
+  color: var(--text-white);
+  font-size: 45px;
+  font-weight: 700;
+
+  @media (width <= 450px) {
+    font-size: 35px;
+  }
+
+  span {
+    color: var(--red);
+  }
+}
+
+.headerImg {
+  width: 45%;
+
+  @media (width <= 768px) {
+    width: 80%;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+}
+
+.authBlock {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,35 @@
+.nav {
+  border-top: 2px solid #e00;
+  border-bottom: 1.5px solid #ccc;
+  background: var(--background);
+}
+
+.navList {
+  display: flex;
+  justify-content: flex-start;
+  gap: 2rem;
+  list-style: none;
+
+  @media (width <= 768px) {
+    overflow-y: scroll;
+    margin: 0 -10px;
+  }
+}
+
+.navItem {
+  display: inline-block;
+  padding: 1rem 0;
+  color: #4f4f4f;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+  font-weight: 500;
+
+  @media (width <= 768px) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &:hover {
+    color: #e00;
+  }
+}
